@@ -1,0 +1,39 @@
+html, body {
+  height: 100%;
+  background: #f5f6f7;
+}
+.container{
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+}
+/* marked */
+.content-article {
+  * {
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  code {
+    font-size: 14px;
+    font-family: '微软雅黑';
+  }
+}
+
+/* @media (min-width: 768px) {
+  .container {
+    width: 750px;
+    padding: 0 15px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+} */
