@@ -39,6 +39,11 @@ export default {
       this.getArticleList()
     }
   },
+  metaInfo () {
+    return {
+      title: 'Lolo-web前端技术文章分享'
+    }
+  },
   methods: {
     async getArticleList () {
       try {

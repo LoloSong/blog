@@ -45,6 +45,11 @@ export default {
   mounted () {
     this.getArticle()
   },
+  metaInfo () {
+    return {
+      title: this.articleData.title
+    }
+  },
   methods: {
     async getArticle () {
       try {

@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="container">
-      <router-link to="/" tag="div" class="logo"><img :src="require('./logo.png')" alt="logo"></router-link>
+      <router-link to="/" tag="h1" class="logo"><img :src="require('./logo.png')" alt="logo"></router-link>
       <!-- <div class="logo"></div> -->
       <div class="nav-category" @click="toggleNav"><i class="iconfont icon-category"></i></div>
       <!-- PC端导航 -->
