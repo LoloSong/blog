@@ -28,10 +28,6 @@ export default new Router({
       path: '/article/:id',
       name: 'article',
       component: Article
-    },
-    {
-      path: '*',
-      redirect: '/'
     }
   ]
 })
