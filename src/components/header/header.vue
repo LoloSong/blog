@@ -8,12 +8,14 @@
       <ul class="nav">
         <router-link to="/" tag="li" style="cursor: pointer">主页</router-link>
         <router-link to="/hotArticle" tag="li" style="cursor: pointer">热门博文</router-link>
+        <router-link to="/nav" tag="li" style="cursor: pointer">网站导航</router-link>
       </ul>
       <!-- 移动端导航 -->
       <transition name="fade">
         <ul class="nav-mobile" v-show="showNav" @click="toggleNav">
-          <router-link to="/" tag="li">主页</router-link>
-          <router-link to="/hotArticle" tag="li">热门博文</router-link>
+          <router-link to="/" tag="li" style="cursor: pointer">主页</router-link>
+          <router-link to="/hotArticle" tag="li" style="cursor: pointer">热门博文</router-link>
+          <router-link to="/nav" tag="li" style="cursor: pointer">网站导航</router-link>
         </ul>
       </transition>
     </div>

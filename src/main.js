@@ -6,13 +6,13 @@ import router from './router'
 import '@/assets/css/index.scss'
 import '@/assets/iconfont/iconfont.css'
 
-import { Loading, Pagination } from 'element-ui'
+import { Row, Col, Loading, Pagination, Card } from 'element-ui'
 
 import highlight from '@/directive/highlight'
 
 Vue.use(MetaInfo)
 Vue.use(highlight)
-Vue.use(Loading.directive).use(Pagination)
+Vue.use(Loading.directive).use(Pagination).use(Card).use(Row).use(Col)
 
 Vue.config.productionTip = false
 
