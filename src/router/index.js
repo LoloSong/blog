@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/view/home/home'
-import Nav from '@/view/nav/nav'
-import HotArticle from '@/view/hotArticle/hotArticle'
-import Article from '@/view/article/article'
+
+const Home = () => import('@/view/home/home')
+const Nav = () => import('@/view/nav/nav')
+const HotArticle = () => import('@/view/hotArticle/hotArticle')
+const Article = () => import('@/view/article/article')
 
 Vue.use(Router)
 
