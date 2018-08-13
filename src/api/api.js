@@ -11,7 +11,6 @@ export default {
         limit
       }
     })
-    console.log(data)
     return data.data
   },
   // 获取热门博文
