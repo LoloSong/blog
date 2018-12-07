@@ -45,6 +45,9 @@ export default {
   mounted () {
     this.getArticle()
   },
+  activated () {
+    this.getArticle()
+  },
   metaInfo () {
     return {
       title: this.articleData.title
