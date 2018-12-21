@@ -70,5 +70,13 @@ export default {
       method: 'get'
     })
     return data.data
+  },
+  // 获取友情链接
+  async getFriend () {
+    const data = await service({
+      url: '/friend/getFriend',
+      method: 'get'
+    })
+    return data.data
   }
 }

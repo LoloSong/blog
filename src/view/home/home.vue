@@ -9,6 +9,7 @@
       </div>
       <div class="sidebar">
         <category @clickCategory="go"></category>
+        <friend-link @clickFriend="goFriend"></friend-link>
       </div>
     </div>
   </div>
@@ -18,10 +19,12 @@
 import api from '@/api/api'
 import Excerpt from '@/components/excerpt/excerpt'
 import Category from '@/components/category/category'
+import FriendLink from '@/components/friendLink/friendLink'
 export default {
   components: {
     Excerpt,
-    Category
+    Category,
+    FriendLink
   },
   data () {
     return {
@@ -65,6 +68,7 @@ export default {
           page: this.page,
           limit: this.limit
         })
+        console.log(json)
         this.pageTotal = json.data.articleCount
         this.ArticleList = json.data.list
         this.loading = false
@@ -74,6 +78,9 @@ export default {
     },
     go (category) {
       this.$router.push({path: `/articleList`, query: {category}})
+    },
+    goFriend (friend) {
+      window.open(friend)
     },
     changePage (page) {
       this.page = page
